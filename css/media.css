@@ -1,0 +1,29 @@
+/* @media (max-width: 768px) {
+    .bg-hero {
+        background-attachment: scroll;
+    }
+
+    .counter-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        min-width: 100px;
+    }
+}
+
+@media (min-width:1024px) {
+    #contact {
+        height: 80vh;
+    }
+   
+} */
+@media (min-width:768px ){
+        .container {
+            min-width: 546px;
+        }
+    }

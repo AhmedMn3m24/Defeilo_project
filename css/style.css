@@ -1,0 +1,470 @@
+* {
+    box-sizing: border-box;
+}
+/* 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    left: 68px;
+}
+
+.navbar-nav {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.navbar-brand {
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: white;
+    transition: color 2s ease;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after,
+.navbar-nav .nav-link:not(.dropdown-toggle).active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+} */
+/* شكل الروابط في النافبار */
+.navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  transition: color 0.4s ease;
+}
+
+/* الخط اللي بيظهر تحت الروابط العادية فقط (بدون dropdown) */
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+/* لما أعمل hover أو يكون الرابط active، يكبر الخط */
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after,
+.navbar-nav .nav-link:not(.dropdown-toggle).active::after {
+  width: 100%;
+}
+
+
+:root {
+    --line-color: #0078ff;
+    --line-height: 3px;
+}
+
+.Skill-pragraph {
+    position: relative;
+}
+
+.Skill-pragraph::before {
+    content: "";
+    display: block;
+    height: var(--line-height);
+    background-color: var(--line-color);
+    width: 40px;
+    position: absolute;
+    top: 34px;
+
+}
+
+
+/* **************************************  ------------------------------------------------*/
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(74, 69, 69, 0.5)), url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.typed-text::after {
+    content: "Designer";
+    animation: changeText 8s steps(1) infinite;
+    font-weight: bold;
+    border-right: 2px solid #fff;
+    padding-right: 5px;
+}
+
+
+
+
+
+.about-bg {
+    background-color: #ffffff;
+}
+
+.lin-about {
+    position: relative;
+}
+
+.lin-about::before {
+    content: "";
+    display: block;
+    height: var(--line-height);
+    background-color: var(--line-color);
+    width: 75px;
+    position: absolute;
+    top: 45px;
+    text-align: center;
+}
+
+
+.carousel {
+    background-image: linear-gradient(rgba(15, 15, 210, 0.5), rgba(15, 15, 210, 0.5)), url(/images/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 3rem 1rem;
+}
+
+.fixed-height-carousel {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback {
+    max-width: 00px;
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+}
+
+.pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* العناوين */
+.feedback h5 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* النص */
+.feedback p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #eee;
+}
+
+
+
+.icon {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+    /* color: blue; */
+}
+
+.services-item .inner {
+    background-color: #f9f9f9ee;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.icon:hover {
+    background: linear-gradient(45deg, #0078ff, #0078ff);
+    cursor: pointer;
+}
+
+.line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: #0078ff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.testimonial {
+    width: 10%;
+    border-radius: 10%;
+}
+
+
+
+.overlay-mf {
+    background-color: #0078ff;
+}
+
+.pic {
+    width: 10%;
+}
+
+#contact {
+    background-image: linear-gradient(rgba(15, 15, 210, 0.5), rgba(15, 15, 210, 0.5)), url(/images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+}
+
+.overlay {
+    background: rgba(0, 123, 255, 0.4);
+    /* لون overlay أزرق شفاف */
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0d6efd;
+    /* أزرق */
+    color: black;
+    /* لون الأيقونة */
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #0056b3;
+    /* أزرق غامق عند الـ hover */
+    color: white;
+    /* الأيقونة تبقى بيضا عند الـ hover */
+}
+
+.typed::after {
+    content: "|";
+    animation: typing 3s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+.iam-text,
+.typed::after {
+    font-size: 25px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+.typed::after {
+    content: "|";
+    font-weight: 600;
+    animation: typing 3s infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@keyframes typing {
+    0% {
+        content: "|";
+    }
+
+    3% {
+        content: "D|";
+    }
+
+    6% {
+        content: "De|";
+    }
+
+    9% {
+        content: "Des|";
+    }
+
+    12% {
+        content: "Desi|";
+    }
+
+    15% {
+        content: "Desig|";
+    }
+
+    18% {
+        content: "Design|";
+    }
+
+    21% {
+        content: "Designe|";
+    }
+
+    24% {
+        content: "Designer|";
+    }
+
+    27% {
+        content: "Designer |";
+    }
+
+    30% {
+        content: "Designer L|";
+    }
+
+    33% {
+        content: "Designer La|";
+    }
+
+    36% {
+        content: "Designer Lar|";
+    }
+
+    39% {
+        content: "Designer Larr|";
+    }
+
+    42% {
+        content: "Designer Larry|";
+    }
+
+    45% {
+        content: "Designer Larry |";
+    }
+
+    48% {
+        content: "Designer Larry D|";
+    }
+
+    51% {
+        content: "Designer Larry Da|";
+    }
+
+    54% {
+        content: "Designer Larry Dan|";
+    }
+
+    57% {
+        content: "Designer Larry Dani|";
+    }
+
+    60% {
+        content: "Designer Larry Danie|";
+    }
+
+    63% {
+        content: "Designer Larry Daniel|";
+    }
+
+    66% {
+        content: "Designer Larry Daniels|";
+    }
+
+    69% {
+        content: "Designer Larry Daniels |";
+    }
+
+    72% {
+        content: "Designer Larry Daniels D|";
+    }
+
+    75% {
+        content: "Designer Larry Daniels De|";
+    }
+
+    78% {
+        content: "Designer Larry Daniels Dev|";
+    }
+
+    81% {
+        content: "Designer Larry Daniels Deve|";
+    }
+
+    84% {
+        content: "Designer Larry Daniels Devel|";
+    }
+
+    87% {
+        content: "Designer Larry Daniels Develo|";
+    }
+
+    90% {
+        content: "Designer Larry Daniels Develop|";
+    }
+
+    93% {
+        content: "Designer Larry Daniels Develope|";
+    }
+
+    96% {
+        content: "Designer Larry Daniels Developer|";
+    }
+
+    100% {
+        content: "Designer Larry Daniels Developer|";
+    }
+}
